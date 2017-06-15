@@ -42,7 +42,7 @@
                     <navigationItem key="navigationItem" title="QRScanner by Procodific" id="UkG-wA-hvx"/>
                     <connections>
                         <outlet property="messageLabel" destination="PvR-Bv-4Zf" id="2p0-mu-11X"/>
-                        <segue destination="1TF-Xt-dig" kind="show" identifier="" id="ymZ-LA-S7n"/>
+                        <segue destination="1TF-Xt-dig" kind="show" identifier="webViewSegue" id="ymZ-LA-S7n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -52,7 +52,7 @@
         <!--Web View Controller-->
         <scene sceneID="5M3-qA-Leh">
             <objects>
-                <viewController storyboardIdentifier="PDFWebViewController" id="1TF-Xt-dig" customClass="PDFWebViewController" customModule="QRScanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PDFWebViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1TF-Xt-dig" customClass="PDFWebViewController" customModule="QRScanner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tx7-qm-jXW"/>
                         <viewControllerLayoutGuide type="bottom" id="uaT-qq-oyJ"/>

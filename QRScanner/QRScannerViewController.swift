@@ -73,20 +73,10 @@ class QRScannerViewController: UIViewController {
         if(verifyUrl(urlString: link)) {
             let pdfWebViewController = self.storyboard?.instantiateViewController(withIdentifier: "PDFWebViewController") as! PDFWebViewController
             pdfWebViewController.website = link
-//            present(pdfWebViewController, animated: true) {
-//                // nothing
-//            }
             self.navigationController?.pushViewController(pdfWebViewController, animated: true)
-//            self.navigationController?.present(pdfWebViewController, animated: true, completion: {
-//                // nothing
-//            })
-            self.navigationController?.show(pdfWebViewController, sender: nil)
         } else {
-            // create the alert
             let alert = UIAlertController(title: "Document not found", message: "", preferredStyle: UIAlertControllerStyle.alert)
-            // add an action (button)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-            // show the alert
+            alert.addAction(UIAlertAction(title: "Try again", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
     }
