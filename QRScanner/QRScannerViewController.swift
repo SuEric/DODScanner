@@ -62,7 +62,6 @@ class QRScannerViewController: UIViewController {
                 view.addSubview(qrCodeFrameView)
                 view.bringSubview(toFront: qrCodeFrameView)
             }
-            
         } catch {
             // If any error occurs, simply print it out and don't continue any more.
             print(error)
@@ -70,9 +69,38 @@ class QRScannerViewController: UIViewController {
         }
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func presentViewController(link: String) {
+        if(verifyUrl(urlString: link)) {
+            let pdfWebViewController = self.storyboard?.instantiateViewController(withIdentifier: "PDFWebViewController") as! PDFWebViewController
+            pdfWebViewController.website = link
+//            present(pdfWebViewController, animated: true) {
+//                // nothing
+//            }
+            self.navigationController?.pushViewController(pdfWebViewController, animated: true)
+//            self.navigationController?.present(pdfWebViewController, animated: true, completion: {
+//                // nothing
+//            })
+            self.navigationController?.show(pdfWebViewController, sender: nil)
+        } else {
+            // create the alert
+            let alert = UIAlertController(title: "Document not found", message: "", preferredStyle: UIAlertControllerStyle.alert)
+            // add an action (button)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            // show the alert
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    func verifyUrl (urlString: String?) -> Bool {
+        //Check for nil
+        if let urlString = urlString {
+            // create NSURL instance
+            if let url = NSURL(string: urlString) {
+                // check if your application can open the NSURL instance
+                return UIApplication.shared.canOpenURL(url as URL)
+            }
+        }
+        return false
     }
 }
 
@@ -85,7 +113,7 @@ extension QRScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
         // Check if the metadataObjects array is not nil and it contains at least one object.
         if metadataObjects == nil || metadataObjects.count == 0 {
             qrCodeFrameView?.frame = CGRect.zero
-            messageLabel.text = "No QR/barcode is detected"
+            messageLabel.text = "No QR code is detected"
             return
         }
         
@@ -98,7 +126,8 @@ extension QRScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
             qrCodeFrameView?.frame = barCodeObject!.bounds
             
             if metadataObj.stringValue != nil {
-                messageLabel.text = metadataObj.stringValue
+                messageLabel.text = "QR code is detected"
+                presentViewController(link: metadataObj.stringValue)
             }
         }
     }
