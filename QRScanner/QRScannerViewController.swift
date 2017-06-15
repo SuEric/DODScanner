@@ -19,16 +19,22 @@ class QRScannerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
         // Get an instance of the AVCaptureDevice class to initialize a device object and provide the video as the media type parameter.
         let captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
+        
+        // Initialize the captureSession object.
+        captureSession = AVCaptureSession()
         
         do {
             // Get an instance of the AVCaptureDeviceInput class using the previous device object.
             let input = try AVCaptureDeviceInput(device: captureDevice)
             
-            // Initialize the captureSession object.
-            captureSession = AVCaptureSession()
+            
             
             // Set the input device on the capture session.
             captureSession?.addInput(input)
@@ -74,6 +80,7 @@ class QRScannerViewController: UIViewController {
             let pdfWebViewController = self.storyboard?.instantiateViewController(withIdentifier: "PDFWebViewController") as! PDFWebViewController
             pdfWebViewController.website = link
             self.navigationController?.pushViewController(pdfWebViewController, animated: true)
+            captureSession?.stopRunning()
         } else {
             let alert = UIAlertController(title: "Document not found", message: "", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Try again", style: UIAlertActionStyle.default, handler: nil))
