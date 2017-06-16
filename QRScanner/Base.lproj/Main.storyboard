@@ -20,28 +20,10 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No QR code is detected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PvR-Bv-4Zf">
-                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="dtt-jM-gNB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="PvR-Bv-4Zf" secondAttribute="trailing" id="Cb3-yf-d5q"/>
-                            <constraint firstItem="PvR-Bv-4Zf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GK4-nv-eQu"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PvR-Bv-4Zf" secondAttribute="bottom" id="H6A-Ji-0FL"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="QRScanner by Procodific" id="UkG-wA-hvx"/>
                     <connections>
-                        <outlet property="messageLabel" destination="PvR-Bv-4Zf" id="2p0-mu-11X"/>
                         <segue destination="1TF-Xt-dig" kind="show" identifier="webViewSegue" id="ymZ-LA-S7n"/>
                     </connections>
                 </viewController>
