@@ -56,9 +56,6 @@ class QRScannerViewController: UIViewController {
             // Start video capture.
             captureSession?.startRunning()
             
-            // Move the message label and top bar to the front
-//            view.bringSubview(toFront: messageLabel)
-            
             // Initialize QR Code Frame to highlight the QR code
             qrCodeFrameView = UIView()
             
@@ -123,7 +120,6 @@ extension QRScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
             qrCodeFrameView?.frame = barCodeObject!.bounds
             
             if metadataObj.stringValue != nil {
-                messageLabel.text = "QR code is detected"
                 presentViewController(link: metadataObj.stringValue)
             }
         }
