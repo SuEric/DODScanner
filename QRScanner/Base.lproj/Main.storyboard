@@ -32,10 +32,10 @@
             </objects>
             <point key="canvasLocation" x="964" y="36.431784107946029"/>
         </scene>
-        <!--Details View Controller-->
+        <!--Detalles del Documento-->
         <scene sceneID="OA4-J1-JQK">
             <objects>
-                <viewController storyboardIdentifier="DetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Ku-0A-0H4" customClass="DetailsViewController" customModule="QRScanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsViewController" title="Detalles del Documento" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Ku-0A-0H4" customClass="DetailsViewController" customModule="QRScanner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ccA-2n-HCP"/>
                         <viewControllerLayoutGuide type="bottom" id="1IQ-1E-1Vh"/>
@@ -56,59 +56,51 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONSTANCIA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PE0-99-zK4">
-                                <rect key="frame" x="134" y="297" width="107" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="128" y="260" width="119" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taller: Uso y lectura de rúbricas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmD-Lc-gKi">
-                                <rect key="frame" x="66" y="323" width="242" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="53" y="291" width="269" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 al 14 de agosto de 2015" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blX-hM-3IA">
-                                <rect key="frame" x="89" y="355" width="197" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="78" y="322" width="219" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 horas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDd-LD-Pzs">
-                                <rect key="frame" x="153" y="384" width="68" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="149" y="353" width="76" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ricardo Reyes González" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dpc-8d-jBh">
-                                <rect key="frame" x="95" y="413" width="185" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detalles del Documento:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3B-tb-RN8">
-                                <rect key="frame" x="77.5" y="232" width="220" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <rect key="frame" x="85" y="384" width="205" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CDd-LD-Pzs" firstAttribute="centerX" secondItem="blX-hM-3IA" secondAttribute="centerX" id="0nN-rD-mF7"/>
                             <constraint firstAttribute="trailing" secondItem="CUn-Uu-BQZ" secondAttribute="trailing" id="2mW-r7-oUa"/>
-                            <constraint firstItem="WmD-Lc-gKi" firstAttribute="top" secondItem="PE0-99-zK4" secondAttribute="bottom" constant="5" id="6Zw-Ao-b5e"/>
                             <constraint firstItem="CUn-Uu-BQZ" firstAttribute="leading" secondItem="HnT-db-SLW" secondAttribute="leading" id="6pG-Fl-xDY"/>
-                            <constraint firstItem="WmD-Lc-gKi" firstAttribute="centerY" secondItem="HnT-db-SLW" secondAttribute="centerY" id="Hi5-vE-soC"/>
-                            <constraint firstItem="blX-hM-3IA" firstAttribute="top" secondItem="WmD-Lc-gKi" secondAttribute="bottom" constant="11" id="OAi-46-aDQ"/>
-                            <constraint firstItem="PE0-99-zK4" firstAttribute="top" secondItem="e3B-tb-RN8" secondAttribute="bottom" constant="41" id="OYq-h5-xeM"/>
+                            <constraint firstItem="blX-hM-3IA" firstAttribute="top" secondItem="WmD-Lc-gKi" secondAttribute="bottom" constant="8" id="CdR-lr-yME"/>
+                            <constraint firstItem="blX-hM-3IA" firstAttribute="centerX" secondItem="HnT-db-SLW" secondAttribute="centerX" id="EU4-0X-DJK"/>
+                            <constraint firstItem="Dpc-8d-jBh" firstAttribute="centerX" secondItem="CDd-LD-Pzs" secondAttribute="centerX" id="JEU-t8-erC"/>
+                            <constraint firstItem="PE0-99-zK4" firstAttribute="centerX" secondItem="WmD-Lc-gKi" secondAttribute="centerX" id="Jiy-mf-O3e"/>
+                            <constraint firstItem="CDd-LD-Pzs" firstAttribute="centerX" secondItem="blX-hM-3IA" secondAttribute="centerX" id="Owj-tZ-rg2"/>
                             <constraint firstItem="1IQ-1E-1Vh" firstAttribute="top" secondItem="CUn-Uu-BQZ" secondAttribute="bottom" id="QWd-xl-Ols"/>
-                            <constraint firstItem="e3B-tb-RN8" firstAttribute="centerX" secondItem="PE0-99-zK4" secondAttribute="centerX" id="SOh-xJ-B0y"/>
-                            <constraint firstItem="Dpc-8d-jBh" firstAttribute="centerX" secondItem="CDd-LD-Pzs" secondAttribute="centerX" id="Ww5-Tf-TuO"/>
-                            <constraint firstItem="Dpc-8d-jBh" firstAttribute="top" secondItem="CDd-LD-Pzs" secondAttribute="bottom" constant="8" id="Xz3-K9-uSR"/>
-                            <constraint firstItem="WmD-Lc-gKi" firstAttribute="centerX" secondItem="HnT-db-SLW" secondAttribute="centerX" id="gEy-mA-hxw"/>
-                            <constraint firstItem="PE0-99-zK4" firstAttribute="centerX" secondItem="WmD-Lc-gKi" secondAttribute="centerX" id="hZi-PI-CyQ"/>
-                            <constraint firstItem="CDd-LD-Pzs" firstAttribute="top" secondItem="blX-hM-3IA" secondAttribute="bottom" constant="8" id="huu-Pn-kNl"/>
-                            <constraint firstItem="blX-hM-3IA" firstAttribute="centerX" secondItem="WmD-Lc-gKi" secondAttribute="centerX" id="rzz-Bi-5OQ"/>
+                            <constraint firstItem="Dpc-8d-jBh" firstAttribute="top" secondItem="CDd-LD-Pzs" secondAttribute="bottom" constant="8" id="TyE-fD-CUN"/>
+                            <constraint firstItem="blX-hM-3IA" firstAttribute="centerY" secondItem="HnT-db-SLW" secondAttribute="centerY" id="WDM-35-ykJ"/>
+                            <constraint firstItem="WmD-Lc-gKi" firstAttribute="centerX" secondItem="blX-hM-3IA" secondAttribute="centerX" id="dWI-2w-GjF"/>
+                            <constraint firstItem="CDd-LD-Pzs" firstAttribute="top" secondItem="blX-hM-3IA" secondAttribute="bottom" constant="8" id="f9r-Iu-Fw2"/>
+                            <constraint firstItem="WmD-Lc-gKi" firstAttribute="top" secondItem="PE0-99-zK4" secondAttribute="bottom" constant="8" id="u7d-XK-Uv9"/>
                         </constraints>
                     </view>
                     <connections>
@@ -119,10 +111,10 @@
             </objects>
             <point key="canvasLocation" x="1844" y="35.532233883058474"/>
         </scene>
-        <!--Web View Controller-->
+        <!--Documento-->
         <scene sceneID="5M3-qA-Leh">
             <objects>
-                <viewController storyboardIdentifier="PDFWebViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1TF-Xt-dig" customClass="PDFWebViewController" customModule="QRScanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PDFWebViewController" title="Documento" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1TF-Xt-dig" customClass="PDFWebViewController" customModule="QRScanner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tx7-qm-jXW"/>
                         <viewControllerLayoutGuide type="bottom" id="uaT-qq-oyJ"/>
