@@ -12,6 +12,7 @@
 		CEA190DC1EEC512F00D4FF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA190DB1EEC512F00D4FF34 /* Assets.xcassets */; };
 		CEA190DF1EEC512F00D4FF34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA190DD1EEC512F00D4FF34 /* LaunchScreen.storyboard */; };
 		CEA190E91EEC58A400D4FF34 /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA190E81EEC58A400D4FF34 /* QRScannerViewController.swift */; };
+		CEA1E6191F01A21200BACFB3 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1E6181F01A21200BACFB3 /* DetailsViewController.swift */; };
 		CEB81A111EF1FCE800AA1948 /* PDFWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB81A101EF1FCE800AA1948 /* PDFWebViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		CEA190DE1EEC512F00D4FF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEA190E01EEC512F00D4FF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEA190E81EEC58A400D4FF34 /* QRScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
+		CEA1E6181F01A21200BACFB3 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		CEB81A101EF1FCE800AA1948 /* PDFWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +60,7 @@
 			children = (
 				CEA190D41EEC512F00D4FF34 /* AppDelegate.swift */,
 				CEA190E81EEC58A400D4FF34 /* QRScannerViewController.swift */,
+				CEA1E6181F01A21200BACFB3 /* DetailsViewController.swift */,
 				CEB81A101EF1FCE800AA1948 /* PDFWebViewController.swift */,
 				CEA190D81EEC512F00D4FF34 /* Main.storyboard */,
 				CEA190DB1EEC512F00D4FF34 /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 				CEA190E91EEC58A400D4FF34 /* QRScannerViewController.swift in Sources */,
 				CEB81A111EF1FCE800AA1948 /* PDFWebViewController.swift in Sources */,
 				CEA190D51EEC512F00D4FF34 /* AppDelegate.swift in Sources */,
+				CEA1E6191F01A21200BACFB3 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
