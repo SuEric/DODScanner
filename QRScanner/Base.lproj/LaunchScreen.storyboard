@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,19 +22,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verificación de Documentos Originales Digitales" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86X-Gc-9rL">
-                                <rect key="frame" x="20" y="321.5" width="335" height="25.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86X-Gc-9rL">
+                                <rect key="frame" x="16" y="296.5" width="343" height="75.5"/>
+                                <string key="text">Verificación 
+de
+Documentos Originales Digitales</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="me4-Wq-GLv">
+                                <rect key="frame" x="16" y="28" width="343" height="123"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="86X-Gc-9rL" secondAttribute="trailing" constant="20" symbolic="YES" id="5AO-oh-66B"/>
+                            <constraint firstItem="86X-Gc-9rL" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="5bZ-Zq-RwZ"/>
                             <constraint firstItem="86X-Gc-9rL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="AQd-lE-3aQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="86X-Gc-9rL" secondAttribute="trailing" id="KcB-Kj-5F2"/>
+                            <constraint firstItem="me4-Wq-GLv" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="S7g-1A-oYu"/>
+                            <constraint firstItem="me4-Wq-GLv" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="SoM-ke-nDR"/>
                             <constraint firstItem="86X-Gc-9rL" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="XI5-hz-2yb"/>
-                            <constraint firstItem="86X-Gc-9rL" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" symbolic="YES" id="h9d-9F-jDD"/>
+                            <constraint firstItem="me4-Wq-GLv" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="8" symbolic="YES" id="h23-Km-7Bm"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -42,4 +52,7 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="969" height="123"/>
+    </resources>
 </document>
