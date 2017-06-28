@@ -25,7 +25,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="QRScanner by Procodific" id="UkG-wA-hvx"/>
                     <connections>
-                        <segue destination="6Ku-0A-0H4" kind="show" id="Mfi-qx-MbS"/>
+                        <segue destination="6Ku-0A-0H4" kind="show" identifier="docDetailSegue" id="Mfi-qx-MbS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -104,7 +104,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="1TF-Xt-dig" kind="show" id="UIP-Rx-mLr"/>
+                        <segue destination="1TF-Xt-dig" kind="show" identifier="docSegue" id="UIP-Rx-mLr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQG-X8-a1s" userLabel="First Responder" sceneMemberID="firstResponder"/>
