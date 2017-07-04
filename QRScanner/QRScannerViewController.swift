@@ -20,6 +20,10 @@ class QRScannerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let logo = UIImage(named: "logoHorizontalSmall")
+        let imageView = UIImageView(image:logo)
+        self.navigationItem.titleView = imageView
+        
         captureSession = AVCaptureSession()
         
         let captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
